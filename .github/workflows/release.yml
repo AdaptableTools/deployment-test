@@ -50,4 +50,4 @@ jobs:
         run: git log
 
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        run: git push origin master --follow-tags
