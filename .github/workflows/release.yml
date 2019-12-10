@@ -42,3 +42,9 @@ jobs:
 
       - name: Actually publish to private registry
         run: npm run canaryrelease
+
+      - name: git status
+        run: git status
+
+      - name: git log
+        run: git log
