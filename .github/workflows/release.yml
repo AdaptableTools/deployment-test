@@ -56,4 +56,6 @@ jobs:
         run: git log origin/master..HEAD
 
       - name: Push changes
-        run: git push origin master
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.DEPLOY_GITHUB_TOKEN }}
