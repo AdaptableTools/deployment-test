@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: do release
+      - name: do release again
         uses: adaptabletools/release-libarry@v1.1
         env:
           PRIVATE_REGISTRY_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}
