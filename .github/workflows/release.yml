@@ -1,5 +1,4 @@
 name: RELEASE
-
 on:
   push:
     branches:
