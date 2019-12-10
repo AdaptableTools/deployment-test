@@ -20,7 +20,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: do release
-        uses: adaptabletools/release-action@v1.23
+        uses: adaptabletools/release-action@v1.24
         env:
           PRIVATE_REGISTRY_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}
 
