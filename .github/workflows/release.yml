@@ -41,7 +41,7 @@ jobs:
           git config --local user.name "GitHub Action"
 
       - name: Actually publish to private registry
-        run: npm run canaryrelease
+        run: node ./registry-publish.js
 
       - name: git status
         run: git status
