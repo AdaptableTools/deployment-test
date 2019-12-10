@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "canaryrelease": "npm version prerelease --preid=canary && && npm run registry-publish-canary",
+    "canaryrelease": "npm version prerelease --preid=canary && npm run registry-publish-canary",
     "registry-publish-canary": "npm publish --tag canary"
   },
   "repository": {
