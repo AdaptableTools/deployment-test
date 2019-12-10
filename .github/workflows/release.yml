@@ -49,5 +49,11 @@ jobs:
       - name: git log
         run: git log
 
+      - name: git remote
+        run: git remote -v
+
+      - name: git log origin/master..HEAD
+        run: git log origin/master..HEAD
+
       - name: Push changes
         run: git push origin master --follow-tags
