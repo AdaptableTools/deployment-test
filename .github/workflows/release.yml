@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - uses: ./.github/actions/publish-action
+      - uses: adaptabletools/release-action@v1.23
         with:
           a-var: "testing me"
         env:
