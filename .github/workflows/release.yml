@@ -48,3 +48,6 @@ jobs:
 
       - name: git log
         run: git log
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
