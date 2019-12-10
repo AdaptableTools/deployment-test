@@ -19,9 +19,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - uses: adaptabletools/release-action@master
-        with:
-          a-var: "testing me now"
+      - name: do release
+        uses: adaptabletools/release-action@v1.23
         env:
           PRIVATE_REGISTRY_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}
 
