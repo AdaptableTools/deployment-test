@@ -35,11 +35,6 @@ jobs:
       - name: git status
         run: git status
 
-      - name: Executing npm install
-        run: npm run install
-        env:
-          CI: true
-
       - name: Set git config
         run: |
           git config --local user.email "action@github.com"
